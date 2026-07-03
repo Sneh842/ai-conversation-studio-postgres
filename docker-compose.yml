@@ -1,0 +1,23 @@
+version: "3.8"
+
+# Spins up a local Postgres instance for the backend.
+# Run:  docker compose up -d
+# Then set DATABASE_URL (see backend/.env.example) to:
+#   postgresql://studio_user:studio_pass@localhost:5432/ai_conversation_studio
+
+services:
+  postgres:
+    image: postgres:16-alpine
+    container_name: ai_conversation_studio_db
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: studio_user
+      POSTGRES_PASSWORD: studio_pass
+      POSTGRES_DB: ai_conversation_studio
+    ports:
+      - "5432:5432"
+    volumes:
+      - studio_pgdata:/var/lib/postgresql/data
+
+volumes:
+  studio_pgdata:
