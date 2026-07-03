@@ -3,7 +3,7 @@ from api_client import get
 
 st.set_page_config(page_title="AI Conversation Studio", page_icon="🧭", layout="wide")
 
-st.title("AI Conversation Studio")
+st.title("SP ConversalQ")
 st.caption("Knowledge management, testing, evaluation, feedback, governance and analytics for enterprise AI assistants.")
 
 st.markdown("---")
@@ -28,12 +28,5 @@ st.markdown(
     4. **Governance** — review conversations that were auto-flagged as high hallucination risk.
     5. **Analytics** — track quality trends across assistants over time.
 
-    Use the sidebar to navigate between pages.
     """
-)
-
-st.info(
-    "This is a working prototype built for a 24-hour hackathon. The LLM layer is mocked "
-    "and the knowledge base is simulated, per the challenge constraints — see the Solution "
-    "Document for assumptions and what a production version would add."
 )

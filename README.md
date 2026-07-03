@@ -6,9 +6,9 @@ Built for the [Hackathon Name] — Challenge 4: AI Conversation Studio.
 
 ## Team
 
-- **Team name:** _[fill in]_
+- **Team name:** NextGen Coders
 - **Members:** Sneh Patel, Parth Shah
-- **College:** CHARUSAT / DEPSTAR
+- **College:** CHARUSAT
 
 ## Technology stack
 
